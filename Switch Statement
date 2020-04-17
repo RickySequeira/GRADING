@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+	int n;
+	printf("What would you like to have,\n1.\tPancakes-\tRs150\n2.\tWaffles\t-\tRs120\n3.\tBurger\t-\tRs200\n4.\tPizza\t-\tRs210\n");
+	scanf("%d",&n);
+{
+		switch (n)
+		{
+		
+		case 1: n=1;
+	printf("Food item - Pancake\nPrice - Rs150");
+	break;
+    case 2: n=2;
+	printf("Food item - Waffle\nPrice - Rs120");
+	break;	
+	case 3: n=3;
+	printf("Food item - Burger\nPrice - Rs200");
+	break;
+	case 4: n=4;
+	printf("Food item - Pizza\nPrice - Rs210");
+	break;
+	default: printf("Sorry! Invalid INPUT");
+}
+}
+} 
