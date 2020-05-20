@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+int tsum(int);
+
+int main()
+{ 
+ int n ,s;
+ printf("Enter the number : \n");
+ scanf("%d",&n);
+ s= tsum(n);
+ printf("The total sum is :%d \n", s);
+return 0;
+}
+
+int tsum(int d)
+{
+    int sum=0;
+	
+	if ( d == 0)
+	{
+		return 0;
+	}
+
+	
+		sum = d%10 + tsum(d/10);
+		return sum;
+	
+}
