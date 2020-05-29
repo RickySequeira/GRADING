@@ -1,0 +1,24 @@
+#include <stdio.h>
+int lcm (int);
+	
+{
+    	int main ()
+    int a,b,m; 
+    printf("Enter the two numbers:\n");
+    scanf("%d%d",&a,&b);
+    m = lcm(a,b);
+    printf("The LCM of the given numbers is %d",m);
+    return 0;
+}
+
+int lcm (int m , int n)
+{
+	int max, i;
+	max = (m>n)? m:n;
+	for (i=max;1;i=i+max)
+	{
+		if (i%n ==0 && i%m==0)
+		break;
+	}
+	return i;
+}
